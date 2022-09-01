@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 26/03/2022 08:12:38 AM by Hibernate Tools 5.3.0.Beta2 --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="SASMEN" dynamic-insert="false" dynamic-update="false" mutable="true" name="model.SgdEntidad" optimistic-lock="version" polymorphism="implicit" schema="dbo" select-before-update="false" table="sgd_entidad">
+        <id name="entiId" type="int">
+            <column name="enti_id"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="entiNombre" optimistic-lock="true" type="string" unique="false">
+            <column name="enti_nombre" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="entiTipoIdentificacion" optimistic-lock="true" type="string" unique="false">
+            <column name="enti_tipo_identificacion" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="tiidId" optimistic-lock="true" type="int" unique="false">
+            <column name="tiid_id" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="entiDireccion" optimistic-lock="true" type="string" unique="false">
+            <column name="enti_direccion"/>
+        </property>
+        <property generated="never" lazy="false" name="entiTelefono" optimistic-lock="true" type="string" unique="false">
+            <column name="enti_telefono"/>
+        </property>
+        <property generated="never" lazy="false" name="muniId" optimistic-lock="true" type="int" unique="false">
+            <column name="muni_id" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="entIesId" optimistic-lock="true" type="string" unique="false">
+            <column name="ent_ies_id"/>
+        </property>
+    </class>
+</hibernate-mapping>

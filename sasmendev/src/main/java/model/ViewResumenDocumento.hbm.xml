@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/05/2022 09:42:49 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="model.ViewResumenDocumento" table="view_resumen_documento">
+        <id name="convId" type="int">
+            <column name="conv_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="tidoId" type="int">
+            <column name="tido_id" />
+        </property>
+        <property name="docuNombre" type="java.lang.String">
+            <column name="docu_nombre" />
+        </property>
+        <property name="enlaId" type="int">
+            <column name="enla_id" />
+        </property>
+        <property name="convNumero" type="java.lang.String">
+            <column name="conv_numero" />
+        </property>
+        <property name="convYear" type="int">
+            <column name="conv_year" />
+        </property>
+        <property name="convApodo" type="java.lang.String">
+            <column name="conv_apodo" />
+        </property>
+        <property name="convFechaInicio" type="java.util.Date">
+            <column name="conv_fecha_inicio" />
+        </property>
+        <property name="cotdPeriodicidad" type="java.lang.String">
+            <column name="cotd_periodicidad" />
+        </property>
+         <property name="docuFechaInicio" type="java.util.Date">
+            <column name="docu_fecha_inicio" />
+        </property>
+    </class>
+</hibernate-mapping>

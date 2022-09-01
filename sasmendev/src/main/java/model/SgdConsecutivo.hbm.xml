@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/04/2022 09:56:23 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="model.SgdConsecutivo" table="sgd_consecutivo">
+        <id name="consId" type="int">
+            <column name="cons_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="consNumero" type="java.lang.String">
+            <column name="cons_numero" />
+        </property>
+        <property name="tidoId" type="int">
+            <column name="tido_id" />
+        </property>
+        <property name="estado" type="java.lang.String">
+            <column name="cons_estado" />
+        </property>
+    </class>
+</hibernate-mapping>

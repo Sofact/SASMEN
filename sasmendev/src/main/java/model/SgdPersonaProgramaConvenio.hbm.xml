@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 26/03/2022 08:12:38 AM by Hibernate Tools 5.3.0.Beta2 --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="SASMEN" dynamic-insert="false" dynamic-update="false" mutable="true" name="model.SgdPersonaProgramaConvenio" optimistic-lock="version" polymorphism="implicit" schema="dbo" select-before-update="false" table="sgd_persona_programa_convenio">
+        <id name="pecoId" type="java.lang.Integer">
+            <column name="peco_id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="persId" optimistic-lock="true" type="int" unique="false">
+            <column name="pers_id" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="convId" optimistic-lock="true" type="int" unique="false">
+            <column name="conv_id" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="pecoCalidad" optimistic-lock="true" type="serializable" unique="false">
+            <column name="peco_calidad" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="pecoEstado" optimistic-lock="true" type="serializable" unique="false">
+            <column name="peco_estado" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="pecoIdSolicitud" optimistic-lock="true" type="serializable" unique="false">
+            <column name="peco_id_solicitud" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="progId" optimistic-lock="true" type="int" unique="false">
+            <column name="prog_id" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="pecoSemestre" optimistic-lock="true" type="serializable" unique="false">
+            <column name="peco_semestre" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="pecoYear" optimistic-lock="true" type="int" unique="false">
+            <column name="peco_year" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="pecoValorMatricula" optimistic-lock="true" type="big_decimal" unique="false">
+            <column name="peco_valor_matricula" not-null="true" scale="4"/>
+        </property>
+        <property generated="never" lazy="false" name="pecoRangoMatricula" optimistic-lock="true" type="serializable" unique="false">
+            <column name="peco_rango_matricula" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="pegoElegible" optimistic-lock="true" type="serializable" unique="false">
+            <column name="pego_elegible" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

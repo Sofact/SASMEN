@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="SASMEN" match-schema="dbo" match-name="sgd_convenio"/>
+  <table-filter match-catalog="SASMEN" match-schema="dbo" match-name="sgd_convenio_entidad"/>
+  <table-filter match-catalog="SASMEN" match-schema="dbo" match-name="sgd_convenio_marco"/>
+  <table-filter match-catalog="SASMEN" match-schema="dbo" match-name="sgd_departamento"/>
+  <table-filter match-catalog="SASMEN" match-schema="dbo" match-name="sgd_documento"/>
+  <table-filter match-catalog="SASMEN" match-schema="dbo" match-name="sgd_entidad"/>
+  <table-filter match-catalog="SASMEN" match-schema="dbo" match-name="sgd_municipio"/>
+  <table-filter match-catalog="SASMEN" match-schema="dbo" match-name="sgd_persona"/>
+  <table-filter match-catalog="SASMEN" match-schema="dbo" match-name="sgd_persona_programa_convenio"/>
+  <table-filter match-catalog="SASMEN" match-schema="dbo" match-name="sgd_programa"/>
+  <table-filter match-catalog="SASMEN" match-schema="dbo" match-name="sgd_rubro"/>
+  <table-filter match-catalog="SASMEN" match-schema="dbo" match-name="sgd_tipo_documento"/>
+  <table-filter match-catalog="SASMEN" match-schema="dbo" match-name="sgd_tipo_identificacion"/>
+  <table-filter match-catalog="SASMEN" match-schema="dbo" match-name="sgd_tipo_rubro"/>
+</hibernate-reverse-engineering>

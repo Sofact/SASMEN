@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 26/03/2022 08:12:38 AM by Hibernate Tools 5.3.0.Beta2 --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="SASMEN" dynamic-insert="false" dynamic-update="false" mutable="true" name="model.SgdPersona" optimistic-lock="version" polymorphism="implicit" schema="dbo" select-before-update="false" table="sgd_persona">
+        <id name="persId" type="java.lang.Integer">
+            <column name="pers_id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="persNombre" optimistic-lock="true" type="serializable" unique="false">
+            <column name="pers_nombre" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="persApellido" optimistic-lock="true" type="serializable" unique="false">
+            <column name="pers_apellido"/>
+        </property>
+        <property generated="never" lazy="false" name="tiidId" optimistic-lock="true" type="int" unique="false">
+            <column name="tiid_id" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="persIdentificacion" optimistic-lock="true" type="serializable" unique="false">
+            <column name="pers_identificacion" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="persFechaNacimiento" optimistic-lock="true" type="date" unique="false">
+            <column length="10" name="pers_fecha_nacimiento"/>
+        </property>
+        <property generated="never" lazy="false" name="muniId" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="muni_id"/>
+        </property>
+        <property generated="never" lazy="false" name="persEstrato" optimistic-lock="true" type="serializable" unique="false">
+            <column name="pers_estrato"/>
+        </property>
+        <property generated="never" lazy="false" name="persGenero" optimistic-lock="true" type="serializable" unique="false">
+            <column name="pers_genero"/>
+        </property>
+        <property generated="never" lazy="false" name="persGrupoPoblacional" optimistic-lock="true" type="serializable" unique="false">
+            <column name="pers_grupo_poblacional"/>
+        </property>
+        <property generated="never" lazy="false" name="persCalificaSisben" optimistic-lock="true" type="serializable" unique="false">
+            <column name="pers_califica_sisben"/>
+        </property>
+        <property generated="never" lazy="false" name="persEstado" optimistic-lock="true" type="serializable" unique="false">
+            <column name="pers_estado" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

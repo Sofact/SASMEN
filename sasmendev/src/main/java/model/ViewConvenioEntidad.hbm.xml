@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12/05/2022 03:27:59 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="model.ViewConvenioEntidad" table="view_convenio_entidad">
+        <id name="entId" type="int">
+            <column name="ent_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="coenId" type="int">
+            <column name="coen_id" />
+        </property>
+        <property name="convId" type="int">
+            <column name="conv_id" />
+        </property>
+        <property name="entiNombre" type="string">
+            <column name="enti_nombre" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/04/2022 10:18:39 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="model.ViewResumen" table="view_resumen">
+        <id name="periodicidad" type="java.lang.String">
+            <column name="PERIODICIDAD" />
+            <generator class="assigned" />
+        </id>
+           <property name="convId" type="int">
+            <column name="conv_id" />
+        </property>
+        <property name="nombre" type="java.lang.String">
+            <column name="NOMBRE" />
+        </property>
+        <property name="convFechaInicio" type="java.util.Date">
+            <column name="CONV_FECHA_INICIO" />
+        </property>
+        <property name="convFechaFin" type="java.util.Date">
+            <column name="CONV_FECHA_FIN" />
+        </property>
+        <property name="convValor" type="double">
+            <column name="CONV_VALOR" />
+        </property>
+        <property name="docuNombre" type="java.lang.String">
+            <column name="DOCU_NOMBRE" />
+        </property>
+        <property name="consecutivo" type="int">
+            <column name="CONSECUTIVO" />
+        </property>
+        <property name="convYear" type="int">
+            <column name="CONV_YEAR" />
+        </property>
+        <property name="convMes" type="int">
+            <column name="CONV_MES" />
+        </property>
+    </class>
+</hibernate-mapping>

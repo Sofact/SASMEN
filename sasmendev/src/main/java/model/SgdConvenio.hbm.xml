@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 26/03/2022 08:12:38 AM by Hibernate Tools 5.3.0.Beta2 --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="SASMEN" dynamic-insert="false" dynamic-update="false" mutable="true" name="model.SgdConvenio" optimistic-lock="version" polymorphism="implicit" schema="dbo" select-before-update="false" table="sgd_convenio">
+        <id name="convId" type="java.lang.Integer">
+            <column name="conv_id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="convNumero" optimistic-lock="true" type="int" unique="false">
+            <column length="500" name="conv_numero" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="convYear" optimistic-lock="true" type="int" unique="false">
+            <column length="500" name="conv_year"/>
+        </property>
+        <property generated="never" lazy="false" name="convFechaInicio" optimistic-lock="true" type="java.time.LocalDate" unique="false">
+            <column length="10" name="conv_fecha_inicio"/>
+        </property>
+        <property generated="never" lazy="false" name="convFechaFin" optimistic-lock="true" type="java.time.LocalDate" unique="false">
+            <column length="10" name="conv_fecha_fin"/>
+        </property>
+        <property generated="never" lazy="false" name="convEstado" optimistic-lock="true" type="string" unique="false">
+            <column length="10" name="conv_estado" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="comaId" optimistic-lock="true" type="int" unique="false">
+            <column name="coma_id" not-null="true"/>
+        </property>
+         <property generated="never" lazy="false" name="convPath" optimistic-lock="true" type="string" unique="false">
+            <column name="conv_path" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="convValor" optimistic-lock="true" type="float" unique="false">
+            <column name="conv_valor" not-null="true"/>
+        </property>
+          <property generated="never" lazy="false" name="convApodo" optimistic-lock="true" type="string" unique="false">
+            <column name="conv_apodo" not-null="true"/>
+        </property>
+         <property generated="never" lazy="false" name="usuId" optimistic-lock="true" type="int" unique="false">
+            <column name="usu_id" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

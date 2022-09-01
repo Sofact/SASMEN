@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 26/03/2022 08:12:38 AM by Hibernate Tools 5.3.0.Beta2 --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="SASMEN" dynamic-insert="false" dynamic-update="false" mutable="true" name="model.SgdPrograma" optimistic-lock="version" polymorphism="implicit" schema="dbo" select-before-update="false" table="sgd_programa">
+        <id name="progId" type="java.lang.Integer">
+            <column name="prog_id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="progNombre" optimistic-lock="true" type="serializable" unique="false">
+            <column name="prog_nombre" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="progCodigo" optimistic-lock="true" type="serializable" unique="false">
+            <column name="prog_codigo" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="entiId" optimistic-lock="true" type="int" unique="false">
+            <column name="enti_id" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 11/05/2022 11:11:43 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="model.SgdUsuario" table="sgd_usuario">
+        <id name="usuId" type="int" access="field">
+            <column name="usu_id" />
+            <generator class="identity" />
+        </id>
+        <property name="usuUser" type="string" access="field">
+            <column name="usu_user" />
+        </property>
+        <property name="usuClave" type="string" access="field">
+            <column name="usu_clave" />
+        </property>
+        <property name="usuNombre" type="string" access="field">
+            <column name="usu_nombre" />
+        </property>
+        <property name="usuEstado" type="string" access="field">
+            <column name="usu_estado" />
+        </property>
+    </class>
+</hibernate-mapping>

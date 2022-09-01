@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30/03/2022 01:06:33 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class catalog="SASMEN" dynamic-insert="false" dynamic-update="false" mutable="true" name="model.SgdConvenioTipoDocumento" optimistic-lock="version" polymorphism="implicit" schema="dbo" select-before-update="false" table="sgd_convenio_tipo_documento">
+           <id name="cotdId" type="java.lang.Integer">
+            <column name="cotd_id" />
+            <generator class="identity" />
+        </id>
+        <property name="convId"  generated="never" lazy="false"  optimistic-lock="true" type="int" unique="false">
+            <column name="conv_id" />
+        </property>
+        <property name="tidoId" type="int" generated="never" lazy="false"  optimistic-lock="true"  unique="false">
+            <column name="tido_id" />
+        </property>
+        <property name="cotdFechaReq" type="java.lang.String" generated="never" lazy="false"  optimistic-lock="true"  unique="false">
+            <column name="cotd_fecha_req" />
+        </property>
+        <property name="cotdValorReq" type="java.lang.String" generated="never" lazy="false"  optimistic-lock="true"  unique="false">
+            <column name="cotd_valor_req" />
+        </property>
+        <property name="cotReducionReq" type="java.lang.String" generated="never" lazy="false"  optimistic-lock="true"  unique="false">
+            <column name="cotd_reduccion_req" />
+        </property>
+        <property name="cotdComentarioReq" type="java.lang.String" generated="never" lazy="false"  optimistic-lock="true"  unique="false">
+            <column name="cotd_comentario_req" />
+        </property>
+        <property name="participantesReq" type="java.lang.String" generated="never" lazy="false"  optimistic-lock="true"  unique="false">
+            <column name="cotd_participantes_req" />
+        </property>
+        <property name="cotdEnlaceReq" type="java.lang.String" generated="never" lazy="false"  optimistic-lock="true"  unique="false">
+            <column name="cotd_enlace_req" />
+        </property>
+        <property name="cotdPeriodicidad" type="java.lang.String" generated="never" lazy="false"  optimistic-lock="true"  unique="false">
+            <column name="cotd_periodicidad" />
+        </property>
+        
+        <property name="cotdFechaFin" type="int" generated="never" lazy="false"  optimistic-lock="true"  unique="false">
+            <column name="cotd_fecha_fin" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

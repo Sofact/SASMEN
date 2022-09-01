@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 26/03/2022 08:12:38 AM by Hibernate Tools 5.3.0.Beta2 --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="SASMEN" dynamic-insert="false" dynamic-update="false" mutable="true" name="model.SgdDocumento" optimistic-lock="version" polymorphism="implicit" schema="dbo" select-before-update="false" table="sgd_documento">
+        <id name="docuId" type="java.lang.Integer">
+            <column name="docu_id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="docuNombre" optimistic-lock="true" type="string" unique="false">
+            <column name="docu_nombre" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="docuPath" optimistic-lock="true" type="string" unique="false">
+            <column name="docu_path" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="docuEstado" optimistic-lock="true" type="string" unique="false">
+            <column length="10" name="docu_estado" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="tidoId" optimistic-lock="true" type="int" unique="false">
+            <column name="tido_id" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="convId" optimistic-lock="true" type="int" unique="false">
+            <column name="conv_id" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="docuFechaIni" optimistic-lock="true" type="java.time.LocalDate" unique="false">
+            <column name="docu_fecha_inicio" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="docuFechaFin" optimistic-lock="true" type="java.time.LocalDate" unique="false">
+            <column name="docu_fecha_fin" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="docuValor" optimistic-lock="true" type="double" unique="false">
+            <column name="docu_valor" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="docuReducccion" optimistic-lock="true" type="string" unique="false">
+            <column name="docu_reduccion" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="docuComentario" optimistic-lock="true" type="string" unique="false">
+            <column name="docu_comentario" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="enlaId" optimistic-lock="true" type="int" unique="false">
+            <column name="enla_id" not-null="true"/>
+        </property>
+         <property generated="never" lazy="false" name="consecutivo" optimistic-lock="true" type="int" unique="false">
+            <column name="consecutivo" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
